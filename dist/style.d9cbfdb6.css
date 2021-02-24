@@ -22886,6 +22886,7 @@ body {
 
 .landing__text__content__standalone-logo {
   display: none;
+  margin-bottom: 1rem;
 }
 
 .landing__text__content__title {
@@ -22992,6 +22993,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .landing__text__content__standalone-logo {
+    display: block;
+  }
+
   .landing {
     flex-direction: row-reverse;
   }
@@ -23022,10 +23027,6 @@ body {
     display: block;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .landing__text__content__standalone-logo {
-    display: none;
   }
 
   .landing__text__content__title {

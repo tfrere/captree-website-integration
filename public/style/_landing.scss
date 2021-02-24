@@ -37,7 +37,7 @@
 }
 
 .landing__text__content__standalone-logo {
-  @apply hidden;
+  @apply hidden mb-4;
 }
 
 .landing__text__content__title {
@@ -115,6 +115,9 @@
 }
 
 @screen lg {
+  .landing__text__content__standalone-logo {
+    @apply block;
+  }
   .landing {
     @apply flex-row-reverse;
   }
@@ -134,10 +137,6 @@
 
   .standalone-text-logo {
     @apply block mx-0;
-  }
-
-  .landing__text__content__standalone-logo {
-    @apply hidden;
   }
 
   .landing__text__content__title {
