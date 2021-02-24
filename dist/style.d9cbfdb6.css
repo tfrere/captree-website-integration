@@ -22718,6 +22718,88 @@ body {
   }
 }
 
+.button {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button:hover .button__content {
+  transform: translateY(2px);
+}
+
+.button:active {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button:active .button__content {
+  transform: translateY(4px);
+}
+
+.button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button__edge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  background-color: #c17e00;
+  border-radius: 5px;
+  transform: translateY(4px);
+  z-index: -10;
+}
+
+.button__content {
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-image: linear-gradient(180deg, #ffa700 0%, #eb9a00 98%);
+  transition: all 100ms ease;
+  border: 5px solid #ffb832;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.button__content__text {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-family: "Fredoka One";
+  text-shadow: -2px -1px 0 #ffb832, -2px 0px 0 #ffb832, -2px 1px 0 #ffb832, -1px -2px 0 #ffb832, -1px -1px 0 #ffb832, -1px 0px 0 #ffb832, -1px 1px 0 #ffb832, -1px 2px 0 #ffb832, 0px -2px 0 #ffb832, 0px -1px 0 #ffb832, 0px 0px 0 #ffb832, 0px 1px 0 #ffb832, 0px 2px 0 #ffb832, 1px -2px 0 #ffb832, 1px -1px 0 #ffb832, 1px 0px 0 #ffb832, 1px 1px 0 #ffb832, 1px 2px 0 #ffb832, 2px -1px 0 #ffb832, 2px 0px 0 #ffb832, 2px 1px 0 #ffb832;
+  text-rendering: optimizeLegibility;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.pagination .button {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;

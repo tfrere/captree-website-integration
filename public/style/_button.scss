@@ -1,0 +1,44 @@
+.button {
+  @apply relative;
+  box-sizing: border-box;
+
+  &:hover {
+    @apply outline-none;
+    .button__content {
+      transform: translateY(2px);
+    }
+  }
+  &:active {
+    @apply outline-none;
+    .button__content {
+      transform: translateY(4px);
+    }
+  }
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.button__edge {
+  @apply absolute w-full h-full left-0 top-0;
+  content: "";
+  background-color: #c17e00;
+  border-radius: 5px;
+  transform: translateY(4px);
+  z-index: -10;
+}
+
+.button__content {
+  @apply relative px-4 py-2;
+  background-image: linear-gradient(180deg, #ffa700 0%, #eb9a00 98%);
+  transition: all 100ms ease;
+  border: 5px solid #ffb832;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.button__content__text {
+  @apply uppercase tracking-wide;
+  font-family: "Fredoka One";
+  @include text-stroke(2, #ffb832);
+}

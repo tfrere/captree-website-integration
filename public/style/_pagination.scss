@@ -1,0 +1,12 @@
+.pagination {
+  @apply flex flex-col justify-between w-full mt-16;
+  .button {
+    @apply mb-4;
+  }
+}
+
+@screen md {
+  .pagination {
+    @apply flex flex-row justify-between;
+  }
+}
