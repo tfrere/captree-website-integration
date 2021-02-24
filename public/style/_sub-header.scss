@@ -1,0 +1,22 @@
+.sub-header {
+  @apply w-full relative flex items-center py-12;
+  background: #fafaf9;
+  border: 1px solid #e9e9e9;
+}
+
+.sub-header-container {
+}
+
+.sub-header__title {
+  @apply text-2xl my-auto font-black;
+  color: #494c26;
+  font-family: "Fredoka One";
+  @include text-stroke(3, rgb(225, 225, 225));
+}
+
+@screen md {
+  .sub-header__title {
+    @apply text-4xl;
+    @include text-stroke(6, rgb(225, 225, 225));
+  }
+}

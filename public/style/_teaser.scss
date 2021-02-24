@@ -1,0 +1,62 @@
+.teaser {
+  @apply w-full flex flex-col mb-6;
+}
+
+.teaser__figure {
+  @apply w-full mr-4;
+}
+
+.teaser__figure__picture {
+}
+
+.teaser__figure__picture__img {
+  @apply w-full;
+}
+
+.teaser__content {
+  @apply flex flex-col;
+}
+
+.teaser__content__title {
+  font-family: "Fredoka One";
+  @apply text-3xl mt-4;
+  color: #494c26;
+}
+
+.teaser__content__meta {
+  @apply uppercase tracking-wide text-xs;
+}
+
+.teaser__content__text {
+  @apply mt-2 text-base;
+  font-family: "Hind Madurai";
+}
+
+.teaser--one-col {
+  @apply flex flex-col;
+
+  .teaser__figure {
+    @apply w-full;
+  }
+
+  .teaser__content {
+    @apply w-full;
+  }
+}
+
+@screen lg {
+  .teaser__content__title {
+    font-family: "Fredoka One";
+    @apply text-3xl mt-0;
+    color: #494c26;
+  }
+
+  .teaser--one-col {
+    @apply flex-row;
+  }
+  .teaser--two-col {
+    .teaser__content__title {
+      @apply mt-2;
+    }
+  }
+}

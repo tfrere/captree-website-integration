@@ -1,0 +1,39 @@
+.cgu {
+}
+
+.cgu__title {
+  color: #494c26;
+  font-weight: 900;
+  font-family: "Fredoka One";
+  font-size: 22px;
+  margin: 10px auto;
+}
+
+.cgu__sub-title {
+  color: #494c26;
+  font-weight: 900;
+  font-family: "Fredoka One";
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+.cgu__text {
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  margin-bottom: 40px;
+  white-space: pre-wrap;
+}
+
+.cgu__list {
+  @apply mb-16;
+}
+
+.cgu__list__item {
+  @apply mb-2 text-lg;
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  color: #494c26;
+  opacity: 0.8;
+}

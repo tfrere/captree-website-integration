@@ -1,0 +1,102 @@
+.header,
+.mobile-header {
+  @apply block w-full top-0 z-20 pl-4 h-16;
+
+  &--with-color {
+    background: #e0e792;
+  }
+  &--absolute {
+    @apply absolute;
+  }
+}
+
+.header {
+  @apply hidden;
+}
+
+.header-container {
+  @apply flex flex-row items-center h-16 w-full;
+}
+
+.header__logo {
+  @apply w-8;
+}
+
+.header-wrapper {
+  @apply flex m-4;
+}
+
+.header__menu {
+  @apply flex items-center ml-4;
+}
+
+.header__menu__item {
+  @apply px-4;
+  &--active .header__menu__item__link {
+    @apply font-black;
+  }
+}
+
+.header__menu__item__link {
+  @apply uppercase opacity-75 text-lg;
+  font-family: "Hind Madurai";
+}
+
+.mobile-header {
+}
+
+.mobile-header__logo {
+  @apply w-48;
+}
+
+.mobile-header {
+  @apply flex flex-row justify-between;
+}
+
+.mobile-header__burger-menu {
+  @apply ml-auto mr-4;
+  &:focus {
+    @apply outline-none;
+  }
+  &--open {
+    .mobile-header__burger-menu__burger {
+      @apply hidden;
+    }
+
+    .mobile-header__burger-menu__cross {
+      @apply block;
+    }
+  }
+}
+
+.mobile-header__burger-menu__burger {
+  @apply block;
+}
+
+.mobile-header__burger-menu__cross {
+  @apply hidden;
+}
+
+.mobile-header__menu {
+  @apply absolute w-full left-0 flex flex-col ml-0 h-0 overflow-hidden;
+  background: #e0e792;
+  top: 64px; // tailwind 16
+  &--open {
+    @apply h-auto;
+  }
+}
+
+.mobile-header__menu .header__menu__item {
+  @apply w-full border-t border-black py-4;
+  border-color: rgba(0, 0, 0, 0.3);
+  background: #e0e792;
+}
+
+@screen md {
+  .header {
+    @apply block;
+  }
+  .mobile-header {
+    @apply hidden;
+  }
+}

@@ -1,0 +1,33 @@
+.dropdown {
+  @apply ml-auto relative inline-block leading-4;
+}
+
+.dropdown__button {
+  @apply px-3 py-2 mr-4 border border-solid border-black rounded-sm text-lg font-black opacity-50 cursor-pointer flex items-center;
+  font-family: "Hind Madurai";
+  background-color: #e0e792;
+  border-color: rgba(0, 0, 0, 0.3);
+  .caretdown {
+    @apply h-2 ml-4;
+  }
+}
+
+.dropdown__content {
+  @apply hidden absolute z-40 right-0;
+  background-color: #e0e792;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown__content a {
+  font-family: "Hind Madurai";
+  @apply font-black opacity-50 px-3 py-4 no-underline block text-lg font-semibold;
+}
+
+.dropdown__content a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown__content {
+  @apply block;
+}
